@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Projetos de engenharia e casas inteligentes pensados para oferecer conforto, eficiência e tecnologia."
+    >
+    <meta name="theme-color" content="#191714">
+    <title>Nexo Engenharia — Casas inteligentes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="brand" href="#inicio" aria-label="Nexo Engenharia — início">
+            <span class="brand__mark" aria-hidden="true">N</span>
+            <span class="brand__name">NEXO<small>ENGENHARIA</small></span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="navigation" id="primary-navigation" aria-label="Navegação principal">
+            <a href="#engenheira">A engenheira</a>
+            <a href="#solucoes">Soluções</a>
+            <a href="#casa-interativa">Casa inteligente</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="hero" id="inicio" aria-labelledby="hero-title" data-header-theme="light">
+        <div class="hero__image" aria-hidden="true"></div>
+        <div class="hero__shade" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <p class="eyebrow">Engenharia para viver melhor</p>
+          <h1 id="hero-title" aria-label="Casas inteligentes feitas para você.">
+            <span class="hero__title-line" data-text="Casas inteligentes" aria-hidden="true"></span>
+            <strong class="hero__title-line" data-text="feitas para você." aria-hidden="true"></strong>
+          </h1>
+          <p class="hero__description">
+            Unimos tecnologia, conforto e eficiência para criar espaços que
+            acompanham o seu jeito de viver.
+          </p>
+          <a class="button button--project" href="#projetos">
+            <span>Conheça nossos projetos</span>
+            <span class="button--project__icon" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="hero__bottom">
+          <div class="hero__caption">
+            <span class="hero__caption-line"></span>
+            <span>Arquitetura, engenharia e tecnologia em harmonia.</span>
+          </div>
+          <a class="scroll-link" href="#sobre">
+            <span>Explore</span>
+            <span class="scroll-link__arrow" aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="highlights" aria-label="Nossos números">
+          <div class="highlight" aria-label="Mais de 12 anos de experiência">
+            <span class="highlight__number" data-counter data-target="12" data-prefix="+" aria-hidden="true">+12</span>
+            <span class="highlight__label">anos de<br>experiência</span>
+          </div>
+          <div class="highlight" aria-label="Mais de 80 projetos entregues">
+            <span class="highlight__number" data-counter data-target="80" data-prefix="+" aria-hidden="true">+80</span>
+            <span class="highlight__label">projetos<br>entregues</span>
+          </div>
+          <div class="highlight highlight--service">
+            <svg class="highlight__icon" viewBox="0 0 42 48" fill="none" aria-hidden="true">
+              <path d="M21 3a13 13 0 0 0-7.5 23.6V45l7.5-6 7.5 6V26.6A13 13 0 0 0 21 3Z" />
+              <circle cx="21" cy="16" r="5.2" />
+            </svg>
+            <span class="highlight__label">Casas<br>inteligentes</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="smart-home" id="casa-interativa" aria-labelledby="smart-home-title">
+        <div class="smart-home__intro">
+          <p class="eyebrow eyebrow--dark">Tecnologia que você sente</p>
+          <h2 id="smart-home-title">Sua casa responde<br><em>ao seu jeito.</em></h2>
+          <p>Veja como a iluminação responde a cada comando.</p>
+        </div>
+
+        <div class="smart-home__room" id="smart-home-room">
+          <img
+            class="smart-home__photo"
+            src="assets/smart-home-room.png"
+            alt="Sala elegante ao anoitecer com iluminação embutida no teto e luminária lateral"
+            loading="lazy"
+          >
+          <div class="smart-home__ceiling-light" aria-hidden="true"></div>
+          <div class="smart-home__ambience" aria-hidden="true"></div>
+          <div class="smart-home__scene-label">
+            <span class="smart-home__live-dot" aria-hidden="true"></span>
+            Simulação interativa
+          </div>
+
+          <div class="smart-panel" aria-label="Painel de controle da casa inteligente">
+            <div class="smart-panel__header">
+              <div>
+                <span class="smart-panel__eyebrow">Minha casa</span>
+                <h3>Sala de estar</h3>
+              </div>
+              <span class="smart-panel__temperature">22° <small> dentro</small></span>
+            </div>
+
+            <div class="smart-panel__controls">
+              <button
+                class="smart-control is-active"
+                type="button"
+                data-smart-control="main-light"
+                aria-pressed="true"
+              >
+                <span class="smart-control__icon" aria-hidden="true">☼</span>
+                <span class="smart-control__text"><strong>Luz do teto</strong><small>Iluminação embutida</small></span>
+                <span class="smart-control__switch" aria-hidden="true"></span>
+              </button>
+              <button
+                class="smart-control"
+                type="button"
+                data-smart-control="ambient-light"
+                aria-pressed="false"
+              >
+                <span class="smart-control__icon smart-control__icon--ambient" aria-hidden="true">✦</span>
+                <span class="smart-control__text"><strong>Luminária</strong><small>Luz lateral</small></span>
+                <span class="smart-control__switch" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <label class="smart-panel__brightness" for="room-brightness">
+              <span><span>Brilho</span><output id="brightness-value" for="room-brightness">70%</output></span>
+              <input id="room-brightness" type="range" min="20" max="100" value="80">
+            </label>
+
+            <p class="smart-panel__status" id="smart-home-status" role="status" aria-live="polite">
+              Luz do teto acesa — sala iluminada
+            </p>
+          </div>
+        </div>
+        <p class="smart-home__note">Demonstração interativa — controles simulados, sem conexão com dispositivos reais.</p>
+      </section>
+
+      <section class="projects-gallery" id="projetos" aria-labelledby="projects-title">
+        <div class="projects-gallery__heading">
+          <p class="eyebrow eyebrow--dark">Nossos projetos</p>
+          <h2 id="projects-title">Do primeiro traço à<br>última <em>mudança plantada.</em></h2>
+          <p>
+            Engenharia e tecnologia em harmonia para transformar cada ideia
+            em um espaço que combina com você.
+          </p>
+        </div>
+        <div class="projects-gallery__track" aria-label="Galeria de projetos">
+          <a class="project-card" href="#contato" aria-label="Saiba mais sobre projetos de interiores">
+            <img
+              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=85"
+              alt="Sala contemporânea com materiais naturais e iluminação aconchegante"
+              loading="lazy"
+            >
+            <span class="project-card__caption">
+              <span class="project-card__category">Interiores</span>
+              <span class="project-card__hint">Passe para explorar</span>
+            </span>
+            <span class="project-card__details">
+              <strong>Interiores</strong>
+              <span>Ambientes acolhedores, desenhados para a vida real.</span>
+              <span class="project-card__link">Saiba mais <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
+          <a class="project-card" href="#contato" aria-label="Saiba mais sobre projetos residenciais">
+            <img
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=85"
+              alt="Casa contemporânea integrada ao jardim"
+              loading="lazy"
+            >
+            <span class="project-card__caption">
+              <span class="project-card__category">Residencial</span>
+              <span class="project-card__hint">Passe para explorar</span>
+            </span>
+            <span class="project-card__details">
+              <strong>Residencial</strong>
+              <span>Casas inteligentes com conforto em cada detalhe.</span>
+              <span class="project-card__link">Saiba mais <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
+          <a class="project-card" href="#contato" aria-label="Saiba mais sobre projetos corporativos">
+            <img
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=85"
+              alt="Espaço de trabalho moderno com luz natural"
+              loading="lazy"
+            >
+            <span class="project-card__caption">
+              <span class="project-card__category">Corporativo</span>
+              <span class="project-card__hint">Passe para explorar</span>
+            </span>
+            <span class="project-card__details">
+              <strong>Corporativo</strong>
+              <span>Espaços de trabalho práticos, conectados e inspiradores.</span>
+              <span class="project-card__link">Saiba mais <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
+          <a class="project-card" href="#contato" aria-label="Saiba mais sobre projetos de paisagismo">
+            <img
+              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=85"
+              alt="Jardim interno integrado à arquitetura da casa"
+              loading="lazy"
+            >
+            <span class="project-card__caption">
+              <span class="project-card__category">Paisagismo</span>
+              <span class="project-card__hint">Passe para explorar</span>
+            </span>
+            <span class="project-card__details">
+              <strong>Paisagismo</strong>
+              <span>Natureza e arquitetura em equilíbrio com o seu espaço.</span>
+              <span class="project-card__link">Saiba mais <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
+          <a class="project-card" href="#contato" aria-label="Saiba mais sobre projetos de reforma">
+            <img
+              src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=85"
+              alt="Interior renovado com design contemporâneo"
+              loading="lazy"
+            >
+            <span class="project-card__caption">
+              <span class="project-card__category">Reformas</span>
+              <span class="project-card__hint">Passe para explorar</span>
+            </span>
+            <span class="project-card__details">
+              <strong>Reformas</strong>
+              <span>Novos começos para espaços que já fazem parte da sua história.</span>
+              <span class="project-card__link">Saiba mais <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="engineer" id="engenheira" aria-labelledby="engineer-title" data-header-theme="light">
+        <div class="engineer__portrait">
+          <img
+            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=1100&q=85"
+            alt="Retrato profissional de uma engenheira"
+            loading="lazy"
+          >
+        </div>
+        <div class="engineer__content">
+          <p class="eyebrow">Quem lidera</p>
+          <h2 id="engineer-title">Engenharia com<br><em>olhar humano.</em></h2>
+          <p class="engineer__subtitle">Uma parceria próxima, da primeira ideia à entrega.</p>
+          <p class="engineer__description">
+            Cada projeto começa ouvindo quem vai viver aquele espaço. Com atenção
+            aos detalhes e soluções pensadas para a rotina de cada pessoa,
+            transformamos planos em casas mais confortáveis, seguras e inteligentes.
+          </p>
+          <div class="engineer__values" aria-label="Nosso jeito de trabalhar">
+            <div>
+              <strong>Escuta</strong>
+              <span>Entender antes de projetar</span>
+            </div>
+            <div>
+              <strong>Cuidado</strong>
+              <span>Atenção em cada etapa</span>
+            </div>
+            <div>
+              <strong>Parceria</strong>
+              <span>Decisões construídas juntos</span>
+            </div>
+          </div>
+          <a class="engineer__link" href="#contato">Vamos conversar <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="intro section" id="sobre">
+        <div class="section__heading">
+          <p class="eyebrow eyebrow--dark">Bem-vindo à Nexo</p>
+          <h2>Engenharia que aproxima<br>tecnologia e <em>bem-estar.</em></h2>
+        </div>
+        <div class="intro__copy">
+          <p>
+            Acreditamos que uma casa pode ser muito mais do que um lugar.
+            Planejamos e executamos soluções inteligentes que deixam a rotina
+            mais simples, segura e eficiente — sem abrir mão da beleza.
+          </p>
+          <a class="text-link" href="#solucoes">Conheça nosso trabalho <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="solutions section" id="solucoes">
+        <div class="section__heading">
+          <p class="eyebrow eyebrow--dark">O que fazemos</p>
+          <h2>Tudo conectado.<br><em>Do seu jeito.</em></h2>
+        </div>
+        <div class="solution-list">
+          <article class="solution">
+            <span class="solution__number">01</span>
+            <div>
+              <h3>Automação residencial</h3>
+              <p>Iluminação, climatização e cortinas sob o seu comando.</p>
+            </div>
+            <span class="solution__arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="solution">
+            <span class="solution__number">02</span>
+            <div>
+              <h3>Segurança inteligente</h3>
+              <p>Mais tranquilidade com sistemas integrados e intuitivos.</p>
+            </div>
+            <span class="solution__arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="solution">
+            <span class="solution__number">03</span>
+            <div>
+              <h3>Eficiência energética</h3>
+              <p>Tecnologia para reduzir o consumo e aproveitar melhor os recursos.</p>
+            </div>
+            <span class="solution__arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="project" id="projeto-destaque" data-header-theme="light">
+        <div class="project__image" role="img" aria-label="Sala contemporânea com iluminação integrada"></div>
+        <div class="project__content">
+          <p class="eyebrow">Projeto em destaque</p>
+          <h2>Conforto em cada detalhe.</h2>
+          <p>
+            Um lar conectado, pensado para que a tecnologia esteja presente
+            quando você precisa — e invisível quando não precisa.
+          </p>
+          <a class="button button--outline" href="#contato">Conte-nos sua ideia</a>
+        </div>
+      </section>
+
+      <footer class="footer" id="contato">
+        <div>
+          <p class="eyebrow">Seu próximo projeto começa aqui</p>
+          <h2>Vamos construir<br><em>algo inteligente?</em></h2>
+        </div>
+        <a class="button button--gold" href="mailto:contato@nexoengenharia.com.br">
+          Fale com a Nexo <span aria-hidden="true">↗</span>
+        </a>
+        <div class="footer__bottom">
+          <a class="brand brand--footer" href="#inicio" aria-label="Nexo Engenharia — voltar ao início">
+            <span class="brand__mark" aria-hidden="true">N</span>
+            <span class="brand__name">NEXO<small>ENGENHARIA</small></span>
+          </a>
+          <span>© 2025 Nexo Engenharia. Todos os direitos reservados.</span>
+          <a href="#inicio">Voltar ao topo ↑</a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
