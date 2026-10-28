@@ -88,13 +88,19 @@ a {
 }
 
 .site-header.is-scrolled {
-  border-color: transparent;
-  background: rgba(255, 255, 255, .006);
+  border-color: var(--line);
+  background: var(--paper);
   box-shadow:
-    0 4px 16px rgba(20, 20, 20, .02),
-    inset 0 1px 0 rgba(255, 255, 255, .07);
-  -webkit-backdrop-filter: saturate(110%) blur(4px);
-  backdrop-filter: saturate(110%) blur(4px);
+    0 4px 16px rgba(20, 20, 20, .08),
+    inset 0 1px 0 rgba(255, 255, 255, .35);
+}
+
+.site-header.is-scrolled.is-dark {
+  border-color: rgba(255, 255, 255, .12);
+  background: #191714;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, .22),
+    inset 0 1px 0 rgba(255, 255, 255, .06);
 }
 
 .site-header.is-scrolled::after {
